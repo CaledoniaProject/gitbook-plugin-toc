@@ -1,19 +1,19 @@
 {
-  "name": "gitbook-plugin-toc",
-  "description": "Add table of content to page",
+  "name": "gitbook-plugin-toc-ng",
+  "description": "Add table of content to page (Modified)",
   "main": "index.js",
-  "version": "0.0.2",
+  "version": "0.10",
   "engines": {
     "gitbook": "*"
   },
-  "homepage": "https://github.com/whzhyh/gitbook-plugin-toc",
+  "homepage": "https://github.com/CaledoniaProject/gitbook-plugin-toc-ng",
   "repository": {
     "type": "git",
-    "url": "https://github.com/whzhyh/gitbook-plugin-toc.git"
+    "url": "https://github.com/CaledoniaProject/gitbook-plugin-toc-ng.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/whzhyh/gitbook-plugin-toc/issues"
+    "url": "https://github.com/CaledoniaProject/gitbook-plugin-toc-ng/issues"
   },
   "dependencies": {
     "markdown-toc": "^0.11.0"
@@ -22,5 +22,5 @@
     "gitbook",
     "plugin"
   ],
-  "author": "Hongzheng Wang <whzhyh@gmail.com>"
+  "author": "Whatever <whatever@gmail.com>"
 }
