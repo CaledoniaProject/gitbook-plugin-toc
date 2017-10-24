@@ -5,8 +5,13 @@ module.exports = {
 	hooks: {
 		"page:before": function (page) {
 			page.content = toc.insert(page.content, {
-				slugify: function (str) {
-					return encodeURI(str.toLowerCase()).replace(/%20/g, '-');
+				linkify: function (ele, text, slug, opts) {
+				    var match = /(.*)\s*{(#[^}]+)}/.exec(text);
+				    if (match) {
+				        ele.content = '<a href="' + match[2] + '">' + match[1] + '</a>'
+				    }
+
+				    return ele
 				}
 			});
 			if (this.options.pluginsConfig.toc.addClass) {
