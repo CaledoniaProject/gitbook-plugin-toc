@@ -1,26 +1,14 @@
-# 说明
+# gitbook-plugin-toc-ng
 
-修改了下 TOC 插件，解决内部跳转的 BUG
+An enhanced version of `gitbook-plugin-toc`. 
 
-修改后，所有的 title 都必须自定义 ID，e.g
+Note: All titles must come with a pre-defined ID to prevent hash conflicts, this is a major difference from the original gitbook plugin.
 
-```
-##### sometitle {#someid}
-```
-
-# gitbook-plugin-toc
-
-This plugin will add table of content to the page and provide navigation function inside a page.
-
-Add `<!-- toc -->` to the markdown files. When you build the book, it will insert a table of content where you insert `<!-- toc -->`
-
-
-`book.json` Config:
-
+### 1. `book.json` Config:
 
 ```
 {
-	"plugins": ["toc"],
+	"plugins": ["toc-ng"],
 	"pluginsConfig": {
 		"toc": {
 			"addClass": true,
@@ -30,4 +18,17 @@ Add `<!-- toc -->` to the markdown files. When you build the book, it will inser
 }
 ```
 
-You can add this config to add a HTML ClassName to the TOC `ul` element
+### 2. full markdown example
+
+```
+<!-- toc -->
+
+# titleA {#titleA}
+
+whatever
+
+## titleB {#titleB}
+
+whatever
+```
+
