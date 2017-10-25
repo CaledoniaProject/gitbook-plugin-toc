@@ -4,7 +4,7 @@ An enhanced version of `gitbook-plugin-toc`.
 
 Note: All titles must come with a pre-defined ID to prevent hash conflicts, this is a major difference from the original gitbook plugin.
 
-### 1. `book.json` Config:
+#### 1. Configure `book.json` 
 
 ```
 {
@@ -18,7 +18,15 @@ Note: All titles must come with a pre-defined ID to prevent hash conflicts, this
 }
 ```
 
-### 2. full markdown example
+#### 2. Install the plugin
+
+In terminal, invoke the following command
+
+```
+gitbook install
+```
+
+# A complete markdown example
 
 ```
 <!-- toc -->
