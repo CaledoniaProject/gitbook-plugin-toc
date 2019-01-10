@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-toc-ng",
   "description": "Add table of content to page (Modified)",
   "main": "index.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "gitbook": "*"
   },
